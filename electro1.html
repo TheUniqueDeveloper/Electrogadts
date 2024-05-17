@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="electro1.css" />
+    <link rel="stylesheet" href="electro.css" />
     <!------------FAVICON------------>
 
     <link
@@ -66,6 +66,107 @@
       </nav>
     </header>
 
+    <!------------------------------ Cart ----------------------------->
+
+    <div class="cart" id="cart">
+      <box-icon class="cart_close" id="cart-close" name="x"></box-icon>
+
+      <h2 class="cart_title-center">My Cart</h2>
+
+      <div class="cart_container">
+        <article class="cart_card">
+          <div class="cart_box">
+            <img src="Images/fp4.jpg" alt="" class="cart_img">
+          </div>
+
+          <div class="cart_details">
+            <h3 class="cart_title">Samsung S24 Ultra</h3>
+            <span class="cart_price">$1100</span>
+
+            <div class="cart_amount">
+              <div class="cart_amount-content">
+                <span class="cart_amount-box">
+                  <box-icon name='minus'></box-icon>
+                </span>
+
+                <span class="cart_amount-number">1</span>
+
+                <span class="cart_amount-box">
+                  <box-icon name='plus' ></box-icon>
+                </span>
+              </div>
+
+              <box-icon class="cart_amount-trash" name='trash' type='solid' ></box-icon>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart_card">
+          <div class="cart_box">
+            <img src="Images/fp5.jpg" alt="" class="cart_img">
+          </div>
+
+          <div class="cart_details">
+            <h3 class="cart_title">Honor magic 6 pro</h3>
+            <span class="cart_price">$800</span>
+
+            <div class="cart_amount">
+              <div class="cart_amount-content">
+                <span class="cart_amount-box">
+                  <box-icon name='minus'></box-icon>
+                </span>
+
+                <span class="cart_amount-number">1</span>
+
+                <span class="cart_amount-box">
+                  <box-icon name='plus' ></box-icon>
+                </span>
+              </div>
+
+              <box-icon class="cart_amount-trash" name='trash' type='solid' ></box-icon>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart_card">
+          <div class="cart_box">
+            <img src="Images/st2.jpg" alt="" class="cart_img">
+          </div>
+
+          <div class="cart_details">
+            <h3 class="cart_title">Realme GT5</h3>
+            <span class="cart_price">$500</span>
+
+            <div class="cart_amount">
+              <div class="cart_amount-content">
+                <span class="cart_amount-box">
+                  <box-icon name='minus'></box-icon>
+                </span>
+
+                <span class="cart_amount-number">1</span>
+
+                <span class="cart_amount-box">
+                  <box-icon name='plus' ></box-icon>
+                </span>
+              </div>
+
+              <box-icon class="cart_amount-trash" name='trash' type='solid' ></box-icon>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart_prices">
+        <span class="cart_prices-item">3 items</span>
+        <span class="cart_prices-total">$2400</span>
+      </div>
+    </div>
+
+
+
+
+    <!--------------------------- Main class ------------------------------->
+
     <main class="main">
       <!--------------- home ------------------->
       <section class="home" id="home">
@@ -117,338 +218,418 @@
         </div>
       </section>
 
-            <!----------------------------- featured ------------------------>
+      <!----------------------------- featured ------------------------>
 
-            <section class="featured section container" id="featured">
-              <h2 class="section_title">Featured Product</h2>
-      
-              <div class="featured_container grid">
-                <article class="featured_card">
-                  <span class="featured_tag"> Sale </span>
-      
-                  <img src="Images/px.png" alt="" class="featured_img" />
-      
-                  <div class="featured_data">
-                    <h3 class="featured_title">Honor Magic 6 Pro</h3>
-                    <span class="featured_price">$549</span>
-                  </div>
-      
-                  <button class="button featured_button">ADD TO CART</button>
-                </article>
-      
-                <article class="featured_card">
-                  <span class="featured_tag"> Sale </span>
-      
-                  <img src="Images/mi.png" alt="" class="featured_img" />
-      
-                  <div class="featured_data">
-                    <h3 class="featured_title">Xiaomi 14 Ultra</h3>
-                    <span class="featured_price">$999</span>
-                  </div>
-      
-                  <button class="button featured_button">ADD TO CART</button>
-                </article>
-      
-                <article class="featured_card">
-                  <span class="featured_tag"> Sale </span>
-      
-                  <img src="Images/fp4.jpg" alt="" class="featured_img" />
-      
-                  <div class="featured_data">
-                    <h3 class="featured_title">Samsung S24 Ultra</h3>
-                    <span class="featured_price">$1299</span>
-                  </div>
-      
-                  <button class="button featured_button">ADD TO CART</button>
-                </article>
-              </div>
-            </section>
-      
-            <!--------------------- Story section ---------------->
-      
-            <section class="story section container">
-              <div class="story_container grid">
-                <div class="story_data">
-                  <h2 class="section_title story_section-title">Our Story</h2>
-      
-                  <h1 class="story_title">
-                    Most Sold Phone <br />
-                    of the Year
-                  </h1>
-      
-                  <p class="story_description">
-                    The latest series of smartphones are here to captivate your
-                    attention. They provide value to your hard earned money like never
-                    before. This is the time to grab the opportunity and dive into the
-                    sales.
-                  </p>
-      
-                  <a href="" class="button button--small">Explore</a>
+      <section class="featured section container" id="featured">
+        <h2 class="section_title">Featured Product</h2>
+
+        <div class="featured_container grid">
+          <article class="featured_card">
+            <span class="featured_tag"> Sale </span>
+
+            <img src="Images/px.png" alt="" class="featured_img" />
+
+            <div class="featured_data">
+              <h3 class="featured_title">Honor Magic 6 Pro</h3>
+              <span class="featured_price">$549</span>
+            </div>
+
+            <button class="button featured_button">ADD TO CART</button>
+          </article>
+
+          <article class="featured_card">
+            <span class="featured_tag"> Sale </span>
+
+            <img src="Images/mi.png" alt="" class="featured_img" />
+
+            <div class="featured_data">
+              <h3 class="featured_title">Xiaomi 14 Ultra</h3>
+              <span class="featured_price">$999</span>
+            </div>
+
+            <button class="button featured_button">ADD TO CART</button>
+          </article>
+
+          <article class="featured_card">
+            <span class="featured_tag"> Sale </span>
+
+            <img src="Images/fp4.jpg" alt="" class="featured_img" />
+
+            <div class="featured_data">
+              <h3 class="featured_title">Samsung S24 Ultra</h3>
+              <span class="featured_price">$1299</span>
+            </div>
+
+            <button class="button featured_button">ADD TO CART</button>
+          </article>
+        </div>
+      </section>
+
+      <!--------------------- Story section ---------------->
+
+      <section class="story section container">
+        <div class="story_container grid">
+          <div class="story_data">
+            <h2 class="section_title story_section-title">Our Story</h2>
+
+            <h1 class="story_title">
+              Most Sold Phone <br />
+              of the Year
+            </h1>
+
+            <p class="story_description">
+              The latest series of smartphones are here to captivate your
+              attention. They provide value to your hard earned money like never
+              before. This is the time to grab the opportunity and dive into the
+              sales.
+            </p>
+
+            <a href="" class="button button--small">Explore</a>
+          </div>
+
+          <div class="story_images">
+            <img src="Images/st3.jpg" alt="" class="story_img" />
+            <div class="story_square"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------------------- Products ---------------------------------->
+
+      <section class="products section container" id="products">
+        <h2 class="section_title">Products</h2>
+
+        <div class="products_container grid">
+          <article class="products_card">
+            <img src="Images/fp5.jpg" alt="" class="products_img" />
+
+            <h3 class="products_title">Honor Magic 6</h3>
+            <span class="products_price">$599</span>
+
+            <button class="products_button">
+              <box-icon color="white" name='shopping-bag'></box-icon>
+            </button>
+          </article>
+
+          <article class="products_card">
+            <img src="Images/st2.jpg" alt="" class="products_img" />
+
+            <h3 class="products_title">Realme GT 5</h3>
+            <span class="products_price">$699</span>
+
+            <button class="products_button">
+             <box-icon color="white" name='shopping-bag'></box-icon>
+            </button>
+          </article>
+
+          <article class="products_card">
+            <img src="Images/fp4.jpg" alt="" class="products_img" />
+
+            <h3 class="products_title">Samsung S24 Ultra</h3>
+            <span class="products_price">$1299</span>
+
+            <button class="products_button">
+              <box-icon color="white" name='shopping-bag'></box-icon>
+            </button>
+          </article>
+
+          <article class="products_card">
+            <img src="Images/fp1.jpg" alt="" class="products_img" />
+
+            <h3 class="products_title">Xiaomi 14 Ultra</h3>
+            <span class="products_price">$1099</span>
+
+            <button class="products_button">
+             <box-icon color="white" name='shopping-bag'></box-icon>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!-- ---------------------------------Testiminials----------------------------- -->
+
+      <section class="testimonial section container">
+        <div class="testimonial_container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial_card swiper-slide">
+                <div class="testimonial_quote">
+                  <box-icon name="quote-alt-left" type="solid"></box-icon>
                 </div>
-      
-                <div class="story_images">
-                  <img src="Images/st3.jpg" alt="" class="story_img" />
-                  <div class="story_square"></div>
+
+                <p class="testimonial_description">
+                  "Best smartphone shopping experience! Easy navigation, great
+                  deals, and prompt delivery. Found my dream phone effortlessly.
+                  Highly recommend this website for hassle-free mobile
+                  shopping!"
+                </p>
+
+                <h3 class="testimonial_date">Jan 24. 2024</h3>
+
+                <div class="testimonial_perfil">
+                  <img
+                    src="Images/test1.avif"
+                    alt=""
+                    class="testimonial_perfil-img"
+                  />
+
+                  <div class="testimonial_perfil-data">
+                    <span class="testimonial_perfil-name">Asilge Zella</span>
+                    <span class="testimonial_perfil-detail"
+                      >Repeating Customer</span
+                    >
+                  </div>
                 </div>
               </div>
-            </section>
 
-            <section class="products section container" id="products">
-              <h2 class="section_title">Products</h2>
-      
-              <div class="products_container grid">
-                <article class="products_card">
-                  <img src="Images/fp5.jpg" alt="" class="products_img" />
-      
-                  <h3 class="products_title">Honor Magic 6</h3>
-                  <span class="products_price">$599</span>
-      
-                  <button class="products_button">
-                    <box-icon color="white" name='shopping-bag'></box-icon>
-                  </button>
-                </article>
-      
-                <article class="products_card">
-                  <img src="Images/st2.jpg" alt="" class="products_img" />
-      
-                  <h3 class="products_title">Realme GT 5</h3>
-                  <span class="products_price">$699</span>
-      
-                  <button class="products_button">
-                   <box-icon color="white" name='shopping-bag'></box-icon>
-                  </button>
-                </article>
-      
-                <article class="products_card">
-                  <img src="Images/fp4.jpg" alt="" class="products_img" />
-      
-                  <h3 class="products_title">Samsung S24 Ultra</h3>
-                  <span class="products_price">$1299</span>
-      
-                  <button class="products_button">
-                    <box-icon color="white" name='shopping-bag'></box-icon>
-                  </button>
-                </article>
-      
-                <article class="products_card">
-                  <img src="Images/fp1.jpg" alt="" class="products_img" />
-      
-                  <h3 class="products_title">Xiaomi 14 Ultra</h3>
-                  <span class="products_price">$1099</span>
-      
-                  <button class="products_button">
-                   <box-icon color="white" name='shopping-bag'></box-icon>
-                  </button>
-                </article>
+              <div class="testimonial_card swiper-slide">
+                <div class="testimonial_quote">
+                  <box-icon name="quote-alt-left" type="solid"></box-icon>
+                </div>
+
+                <p class="testimonial_description">
+                  "Best smartphone shopping experience! Easy navigation, great
+                  deals, and prompt delivery. Found my dream phone effortlessly.
+                  Highly recommend this website for hassle-free mobile
+                  shopping!"
+                </p>
+
+                <h3 class="testimonial_date">Jan 24. 2024</h3>
+
+                <div class="testimonial_perfil">
+                  <img
+                    src="Images/test2.avif"
+                    alt=""
+                    class="testimonial_perfil-img"
+                  />
+
+                  <div class="testimonial_perfil-data">
+                    <span class="testimonial_perfil-name">Hawde Baile</span>
+                    <span class="testimonial_perfil-detail"
+                      >Most buy Customer</span
+                    >
+                  </div>
+                </div>
               </div>
-            </section>
-   <!-- ---------------------------------Testiminials----------------------------- -->
 
-   <section class="testimonial section container">
-    <div class="testimonial_container grid">
-      <div class="swiper testimonial-swiper">
-        <div class="swiper-wrapper">
-          <div class="testimonial_card swiper-slide">
-            <div class="testimonial_quote">
-              <box-icon name="quote-alt-left" type="solid"></box-icon>
+              <div class="testimonial_card swiper-slide">
+                <div class="testimonial_quote">
+                  <box-icon name="quote-alt-left" type="solid"></box-icon>
+                </div>
+
+                <p class="testimonial_description">
+                  "Best smartphone shopping experience! Easy navigation, great
+                  deals, and prompt delivery. Found my dream phone effortlessly.
+                  Highly recommend this website for hassle-free mobile
+                  shopping!"
+                </p>
+
+                <h3 class="testimonial_date">Jan 24. 2024</h3>
+
+                <div class="testimonial_perfil">
+                  <img
+                    src="Images/test3.avif"
+                    alt=""
+                    class="testimonial_perfil-img"
+                  />
+
+                  <div class="testimonial_perfil-data">
+                    <span class="testimonial_perfil-name">Derala Asdewa</span>
+                    <span class="testimonial_perfil-detail"
+                      >Rival Website Maintainer</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <p class="testimonial_description">
-              "Best smartphone shopping experience! Easy navigation, great
-              deals, and prompt delivery. Found my dream phone effortlessly.
-              Highly recommend this website for hassle-free mobile
-              shopping!"
-            </p>
-
-            <h3 class="testimonial_date">Jan 24. 2024</h3>
-
-            <div class="testimonial_perfil">
-              <img
-                src="Images/test1.avif"
-                alt=""
-                class="testimonial_perfil-img"
-              />
-
-              <div class="testimonial_perfil-data">
-                <span class="testimonial_perfil-name">Asilge Zella</span>
-                <span class="testimonial_perfil-detail"
-                  >Repeating Customer</span
-                >
-              </div>
+            <div class="swiper-button-next">
+              <box-icon name="right-arrow-alt"></box-icon>
+            </div>
+            <div class="swiper-button-prev">
+              <box-icon name="left-arrow-alt"></box-icon>
             </div>
           </div>
 
-          <div class="testimonial_card swiper-slide">
-            <div class="testimonial_quote">
-              <box-icon name="quote-alt-left" type="solid"></box-icon>
-            </div>
-
-            <p class="testimonial_description">
-              "Best smartphone shopping experience! Easy navigation, great
-              deals, and prompt delivery. Found my dream phone effortlessly.
-              Highly recommend this website for hassle-free mobile
-              shopping!"
-            </p>
-
-            <h3 class="testimonial_date">Jan 24. 2024</h3>
-
-            <div class="testimonial_perfil">
-              <img
-                src="Images/test2.avif"
-                alt=""
-                class="testimonial_perfil-img"
-              />
-
-              <div class="testimonial_perfil-data">
-                <span class="testimonial_perfil-name">Hawde Baile</span>
-                <span class="testimonial_perfil-detail"
-                  >Most buy Customer</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial_card swiper-slide">
-            <div class="testimonial_quote">
-              <box-icon name="quote-alt-left" type="solid"></box-icon>
-            </div>
-
-            <p class="testimonial_description">
-              "Best smartphone shopping experience! Easy navigation, great
-              deals, and prompt delivery. Found my dream phone effortlessly.
-              Highly recommend this website for hassle-free mobile
-              shopping!"
-            </p>
-
-            <h3 class="testimonial_date">Jan 24. 2024</h3>
-
-            <div class="testimonial_perfil">
-              <img
-                src="Images/test3.avif"
-                alt=""
-                class="testimonial_perfil-img"
-              />
-
-              <div class="testimonial_perfil-data">
-                <span class="testimonial_perfil-name">Derala Asdewa</span>
-                <span class="testimonial_perfil-detail"
-                  >Rival Website Maintainer</span
-                >
-              </div>
-            </div>
+          <div class="testimonial_images">
+            <div class="testimonial_square"></div>
+            <img src="Images/test4.jpg" alt="" class="testimonial_img" />
           </div>
         </div>
+      </section>
 
-        <div class="swiper-button-next">
-          <box-icon name="right-arrow-alt"></box-icon>
+      <!---------------------- New section ------------------->
+
+      <section class="new section container" id="new">
+        <h2 class="section_title">New Arrivals</h2>
+
+        <div class="new_container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <article class="new_card swiper-slide">
+                <span class="new_tag">New</span>
+
+                <img src="Images/hm6.png" alt="" class="new_img" />
+
+                <div class="new_data">
+                  <h3 class="new_title">Honor Magic 6</h3>
+                  <span class="new_price">$749</span>
+                </div>
+
+                <button class="button new_button">ADD TO CART</button>
+              </article>
+
+              <article class="new_card swiper-slide">
+                <span class="new_tag">New</span>
+
+                <img src="Images/mi.png" alt="" class="new_img" />
+
+                <div class="new_data">
+                  <h3 class="new_title">Xiaomi 14 Ultra</h3>
+                  <span class="new_price">$1299</span>
+                </div>
+
+                <button class="button new_button">ADD TO CART</button>
+              </article>
+
+              <article class="new_card swiper-slide">
+                <span class="new_tag">New</span>
+
+                <img src="Images/px.png" alt="" class="new_img" />
+
+                <div class="new_data">
+                  <h3 class="new_title">Pixel 8 Pro</h3>
+                  <span class="new_price">$899</span>
+                </div>
+
+                <button class="button new_button">ADD TO CART</button>
+              </article>
+
+              <article class="new_card swiper-slide">
+                <span class="new_tag">New</span>
+
+                <img src="Images/op.png" alt="" class="new_img" />
+
+                <div class="new_data">
+                  <h3 class="new_title">Oneplus 12 Pro</h3>
+                  <span class="new_price">$659</span>
+                </div>
+
+                <button class="button new_button">ADD TO CART</button>
+              </article>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-prev">
-          <box-icon name="left-arrow-alt"></box-icon>
+      </section>
+
+      <!---------------------------- Newsletter ---------------------------->
+
+      <section class="newsletter section container">
+        <div class="newsletter_bg grid">
+          <div>
+            <h2 class="newsletter_title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <!-- <p class="newsletter_description">
+              "Discover the latest trends in mobile website design and
+              optimization. From responsive layouts to user-friendly interfaces,
+              our newsletter delivers expert insights for maximizing your online
+              presence and engaging mobile audiences effectively."
+            </p> -->
+          </div>
+
+          <form action="" class="newsletter_subscribe">
+            <input type="email" placeholder="Enter your mail" class="newsletter_input">
+            <button class="button">
+              SUBSCRIBE
+            </button>
+          </form>
         </div>
-      </div>
-
-      <div class="testimonial_images">
-        <div class="testimonial_square"></div>
-        <img src="Images/test4.jpg" alt="" class="testimonial_img" />
-      </div>
-    </div>
-  </section>
-
-  <!---------------------- New section ------------------->
-
-  <section class="new section container" id="new">
-    <h2 class="section_title">New Arrivals</h2>
-
-    <div class="new_container">
-      <div class="swiper new-swiper">
-        <div class="swiper-wrapper">
-          <article class="new_card swiper-slide">
-            <span class="new_tag">New</span>
-
-            <img src="Images/hm6.png" alt="" class="new_img" />
-
-            <div class="new_data">
-              <h3 class="new_title">Honor Magic 6</h3>
-              <span class="new_price">$749</span>
-            </div>
-
-            <button class="button new_button">ADD TO CART</button>
-          </article>
-
-          <article class="new_card swiper-slide">
-            <span class="new_tag">New</span>
-
-            <img src="Images/mi.png" alt="" class="new_img" />
-
-            <div class="new_data">
-              <h3 class="new_title">Xiaomi 14 Ultra</h3>
-              <span class="new_price">$1299</span>
-            </div>
-
-            <button class="button new_button">ADD TO CART</button>
-          </article>
-
-          <article class="new_card swiper-slide">
-            <span class="new_tag">New</span>
-
-            <img src="Images/px.png" alt="" class="new_img" />
-
-            <div class="new_data">
-              <h3 class="new_title">Pixel 8 Pro</h3>
-              <span class="new_price">$899</span>
-            </div>
-
-            <button class="button new_button">ADD TO CART</button>
-          </article>
-
-          <article class="new_card swiper-slide">
-            <span class="new_tag">New</span>
-
-            <img src="Images/op.png" alt="" class="new_img" />
-
-            <div class="new_data">
-              <h3 class="new_title">Oneplus 12 Pro</h3>
-              <span class="new_price">$659</span>
-            </div>
-
-            <button class="button new_button">ADD TO CART</button>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!---------------------------- Newsletter ---------------------------->
-
-  <section class="newsletter section container">
-    <div class="newsletter_bg grid">
-      <div>
-        <h2 class="newsletter_title">
-          Subscribe Our <br />
-          Newsletter
-        </h2>
-        <!-- <p class="newsletter_description">
-          "Discover the latest trends in mobile website design and
-          optimization. From responsive layouts to user-friendly interfaces,
-          our newsletter delivers expert insights for maximizing your online
-          presence and engaging mobile audiences effectively."
-        </p> -->
-      </div>
-
-      <form action="" class="newsletter_subscribe">
-        <input type="email" placeholder="Enter your mail" class="newsletter_input">
-        <button class="button">
-          SUBSCRIBE
-        </button>
-      </form>
-    </div>
-  </section>
+      </section>
     </main>
-  </body>
-</html>
+
+    <footer class="footer section">
+      <div class="footer_container container grid">
+        <div class="footer_content">
+          <h3 class="footer_title">Our Information</h3>
+
+          <ul class="footer_list">
+            <li>44600 - Kathmandu</li>
+             <li>Mid Baneshwor</li>
+              <li>977-9876543210</li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">About Us</h3>
+
+          <ul class="footer_links">
+            <li>
+              <a href="#" class="footer_link">Support-Center</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Customer Support</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Copyright</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Products</h3>
+
+          <ul class="footer_links">
+            <li>
+              <a href="#" class="footer_link">Laptops</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Smart Accessories</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">TV</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_content">
+          <h3 class="footer_title">Social</h3>
+
+          <ul class="footer_social">
+            <a href="https://www.facebook.com" target="_blank" class="footer_social-link">
+               <box-icon type='logo' name='facebook'></box-icon>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="footer_social-link">
+              <box-icon name='twitter' type='logo' ></box-icon>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="footer_social-link">
+              <box-icon name='instagram-alt' type='logo' ></box-icon>
+            </a>
+            
+          </ul>
+        </div>
+
+      </div>
+
+      <span class="footer_copy">&#169; Electrogadts. All rights reserved</span>
+    </footer>
+
+    <!--------------------- Scroll up ------------------------>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <box-icon class="scrollup_icon" name='up-arrow-alt'></box-icon>
+    </a>
+
+
+
+
+
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!--------------- Swiper JS ----------------->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="electro1.js"></script>
-    </body>
+    <script src="main.js"></script>
+  </body>
+</html>
